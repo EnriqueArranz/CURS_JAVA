@@ -2,8 +2,8 @@ package n1exercici2;
 
 public class Cotxe {
 
-	private static final String marca = "";
-	private static String model;
+	private static final String marca = "Ferrari";
+	private static String model ="testarossa";
 	private final int potencia;
 	
 	
@@ -37,7 +37,7 @@ public class Cotxe {
 	public Cotxe (String marca,String model,int potencia) {
 		
 	
-	Cotxe.model= model;
+	Cotxe.model= "testarossa";
 	this.potencia= potencia;
 	
 	}

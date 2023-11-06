@@ -24,7 +24,7 @@ public class Venda {
 	public double calcularTotal() throws VendaBuidaException {
 		if (productes.isEmpty()) {
 			// Lanzar la excepción si la lista de productos está vacía
-			throw new VendaBuidaException();
+			throw new VendaBuidaException("Per fer una venda primer has d’afegir productes");
 		} else {
 			// Calcular el precio total sumando los precios de los productos
 			for (Producte producte : productes) {

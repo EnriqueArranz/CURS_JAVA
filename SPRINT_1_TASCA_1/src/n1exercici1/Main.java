@@ -3,9 +3,9 @@ package n1exercici1;
 public class Main {
 
 	public static void main(String[] args) {
-		Corda corda = new Corda(null, 0);
-        Percusion percusion = new Percusion(null,0);
-        Vent vent = new Vent (null,0);
+		Corda corda = new Corda("violin", 0);
+        Percusion percusion = new Percusion("tambor",0);
+        Vent vent = new Vent ("trompeta",0);
         
 corda.tocar();
 percusion.tocar();

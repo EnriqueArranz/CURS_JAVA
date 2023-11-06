@@ -1,9 +1,0 @@
-package n1exercici1;
-
-public class Exception {
-
-	public Exception(String string) {
-		// TODO Auto-generated constructor stub
-	}
-
-}
