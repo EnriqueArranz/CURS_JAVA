@@ -17,10 +17,11 @@ public class OrdenarLlista {
 		llista.add("1");
 		// EXPRESION LAMBDA USANDO COMPARATOR SIEMPRE Y CUANDO SEAN STRINGS(SI NO SON
 		// STRINGS LOS PONE AL PPIO) SE AÑADE EL METODO .REVERSED()
-		Collections.sort(llista,
-				Comparator.comparingInt(o -> o instanceof String ? ((String) o).length() : 0).reversed());
 
-		System.out.println("Llista ordenada: " + llista);
+		List<Object> sortedList = llista.stream().sorted(Comparator.comparingInt(o -> o instanceof String ? ((String) o).length(): 0 ).reversed()).toList();
+
+
+		System.out.println("Llista ordenada: " + sortedList);
 
 	}
 }

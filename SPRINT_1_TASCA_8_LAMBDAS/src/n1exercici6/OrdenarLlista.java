@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class OrdenarLlista {
 	public static void main(String[] args) {
@@ -17,10 +18,13 @@ public class OrdenarLlista {
 		llista.add("1");
 		// EXPRESION LAMBDA USANDO COMPARATOR SIEMPRE Y CUANDO SEAN STRINGS(SI NO SON
 		// STRINGS LOS PONE AL PPIO)
-		Collections.sort(llista,
-				Comparator.comparingInt(o -> o instanceof String ? ((String) o).length() : 0));
 
-		System.out.println("Llista ordenada: " + llista);
-
+List<Object> sortedList = llista.stream().sorted(Comparator.comparingInt(o -> o instanceof String ? ((String) o).length() : 0))
+		.collect(Collectors.toList());
+		System.out.println(sortedList);
+//		Collections.sort(llista,
+//				Comparator.comparingInt(o -> o instanceof String ? ((String) o).length() : 0));
+//
+//		System.out.println("Llista ordenada: " + llista);
 	}
 }
