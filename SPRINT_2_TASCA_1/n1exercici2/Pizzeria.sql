@@ -1,3 +1,8 @@
+
+
+CREATE DATABASE IF NOT EXISTS pizzeria;
+USE pizzeria;
+
 CREATE TABLE Províncies (
     id_província INT PRIMARY KEY,
     nom_província VARCHAR(255) NOT NULL
