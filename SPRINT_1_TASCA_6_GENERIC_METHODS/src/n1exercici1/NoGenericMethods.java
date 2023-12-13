@@ -11,6 +11,7 @@ public class NoGenericMethods {
 		this.obj2 = obj2;
 		this.obj3 = obj3;
 	}
+
 	public String getObj1() {
 		return obj1;
 	}
