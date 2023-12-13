@@ -18,6 +18,7 @@ public class Main {
         //List<String> lista = streamOfStrings.collect(Collectors.toList());
              System.out.println(filteredList);
 
+
     }
 
 }

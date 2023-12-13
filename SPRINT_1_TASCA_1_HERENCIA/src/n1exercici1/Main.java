@@ -12,6 +12,8 @@ percusion.tocar();
 vent.tocar();
 vent.tocar();
 
+String miString = "popeye";
+		System.out.println(miString);
 	}
 
 }

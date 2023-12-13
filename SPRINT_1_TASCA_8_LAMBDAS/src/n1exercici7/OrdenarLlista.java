@@ -18,7 +18,8 @@ public class OrdenarLlista {
 		// EXPRESION LAMBDA USANDO COMPARATOR SIEMPRE Y CUANDO SEAN STRINGS(SI NO SON
 		// STRINGS LOS PONE AL PPIO) SE AÑADE EL METODO .REVERSED()
 
-		List<Object> sortedList = llista.stream().sorted(Comparator.comparingInt(o -> o instanceof String ? ((String) o).length(): 0 ).reversed()).toList();
+		List<Object> sortedList = llista.stream()
+				.sorted(Comparator.comparingInt(o -> o instanceof String ? ((String) o).length(): 0 ).reversed()).toList();
 
 
 		System.out.println("Llista ordenada: " + sortedList);
