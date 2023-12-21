@@ -11,7 +11,7 @@ public class App
         Agenda myAgenda = new Agenda();
 
 
-        System.out.println( "Introduce your COUNRYCODE" );
+        System.out.println( "Introduce your COURYCODE" );
 
 
     }
