@@ -7,11 +7,9 @@ public class MAIN {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
 		Producte producte1 = new Producte("platano", 5);
 		Venda venda = new Venda();
 		venda.afegirProducte(producte1);
-
 		try {
 			// Intentamos calcular el precio total de la venta
 			venda.calcularTotal();
@@ -19,7 +17,6 @@ public class MAIN {
 			// Capturamos y mostramos la excepción personalizada
 			System.out.println(e.getMessage());
 		}
-
 		try {
 			// Sabemos que la clase Venda sólo tiene un producto por lo que intentamos
 			// acceder

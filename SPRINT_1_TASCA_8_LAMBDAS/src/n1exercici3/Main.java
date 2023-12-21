@@ -5,28 +5,24 @@ import java.util.List;
 
 public class Main {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        List<String> monthsList = new ArrayList<String>();
+        monthsList.add("enero");
+        monthsList.add("febrero");
+        monthsList.add("marzo");
+        monthsList.add("abril");
+        monthsList.add("mayo");
+        monthsList.add("junio");
+        monthsList.add("julio");
+        monthsList.add("agosto");
+        monthsList.add("septiembre");
+        monthsList.add("octubre");
+        monthsList.add("noviembre");
+        monthsList.add("diciembre");
+        monthsList.forEach(s -> System.out.println(s));//IMPRIMIR CON EXPRESION LAMBDA
 
-		List<String> monthsList = new ArrayList<String>();
 
-		monthsList.add("enero");
-		monthsList.add("febrero");
-		monthsList.add("marzo");
-		monthsList.add("abril");
-		monthsList.add("mayo");
-		monthsList.add("junio");
-		monthsList.add("julio");
-		monthsList.add("agosto");
-		monthsList.add("septiembre");
-		monthsList.add("octubre");
-		monthsList.add("noviembre");
-		monthsList.add("diciembre");
-
-		monthsList.forEach(s -> System.out.println(s));//IMPRIMIR CON EXPRESION LAMBDA
-		
-	
-
-	}
+    }
 
 }
